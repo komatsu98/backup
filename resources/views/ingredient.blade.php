@@ -1,0 +1,19 @@
+@extends("layouts.app")
+
+
+@section("content")
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingredient</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    This is {{$ingredient->name}}
+</div>
+
+</body>
+</html>
+@endsection
