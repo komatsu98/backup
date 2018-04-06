@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1522924487 source:/home/komatsu/code/back_track/main.cpp
+
+1522924683 source:/home/komatsu/code/back_track/sudoku.c
+	<time.h>
+	<stdio.h>
+	<string.h>
+
