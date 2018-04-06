@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .internal{
+            width:200px;
+            height: 100%;
+            border: 1px solid black;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+       .center{
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            /*will change this to hidden later to deny scolling to user*/
+            white-space: nowrap;
+            margin:56px;
+        }
+    .paddle {
+            width: 2em;
+        }
+        .internal.active {
+            border: 1px solid  #00b0ff;
+        }
+        #content{
+          font-size:0;
+        }
+</style>
+<body>
+  <h2>Dynamic Tabs</h2>
+  <div class="container" style="display: flex; justify-content: space-around; align-items: center">
+    
+    <div style="margin:5px;  ">
+                  <button class="paddle" id="left-button">
+                      <
+                  </button>
+    </div>
+    <div class="nav nav-tabs center" id="content">
+      <div class="active internal"><a data-toggle="tab" href="#home">Home</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu1">Menu 1</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu2">Menu 2</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu3">Menu 3</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu3">Menu 4</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu3">Menu 5</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu3">Menu 6</a></div>
+      <div class="internal"><a data-toggle="tab" href="#menu3">Menu 7</a></div>
+    </div>
+    <div style="margin:5px;  ">
+                  <button class="paddle" id="right-button">
+                      >
+                  </button>
+    </div>
+    
+  </div>
+  <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3>Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </div>
+</body>
+    <script data-require="jquery" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $('#right-button').click(function() {
+            event.preventDefault();
+            $('#content').animate({
+                scrollLeft: "+=205px"
+            }, "50");
+        });
+
+        $('#left-button').click(function() {
+            event.preventDefault();
+            $('#content').animate({
+                scrollLeft: "-=205px"
+            }, "50");
+        });
+       
+    </script>
+
+</html>

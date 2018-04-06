@@ -1,0 +1,1192 @@
+@extends("layout.master")
+
+@section("content")
+    <section>
+        <div>
+            <span> Lich truc </span>
+            <i class="material-icons" id="date-icon">date_range</i>
+            <input style="display: none" id="date" type="date">
+        </div>
+        <div id="demo"></div>
+        <div class="scroll-horizontal-btn">
+            <div style="margin:5px;  ">
+                <button class="paddle" id="left-button">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button>
+            </div>
+
+            {{--7 div hiển thị--}}
+            <div class="center" id="content">
+                <div style="margin-left:2px" id="div-1" class=internal>
+                    <div class="nav navbar  navbar-nav navbar-right">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="notification" style="background: none; border:none;top:-10px; right: -1px">
+                                    <span class=" k-notification">5</span>
+                                </span>
+                                <p class="hidden-lg hidden-md">
+                                    Notifications
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-1" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-1" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-1" class = "dw-div"></div>
+                    <div id="day-div-1" class="day-div"></div>
+                    </br>
+                    <span id="month-div-1" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-2" class=internal>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-2" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-2" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-2" class = "dw-div"></div>
+                    <div id="day-div-2" class="day-div"></div>
+                    </br>
+                    <span id="month-div-2" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-3" class=internal>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-3" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-3" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-3" class = "dw-div"></div>
+                    <div id="day-div-3" class="day-div"></div>
+                    </br>
+                    <span id="month-div-3" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-4" class="internal active">
+                    <div class="nav navbar  navbar-nav navbar-right">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="notification" style="background: none; border:none;top:-10px; right: -1px">
+                                    <span class=" k-notification">5</span>
+                                </span>
+                                <p class="hidden-lg hidden-md">
+                                    Notifications
+                                    <b class="caret"></b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-4" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-4" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-4" class = "dw-div"></div>
+                    <div id="day-div-4" class="day-div"></div>
+                    </br>
+                    <span id="month-div-4" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-5" class=internal>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-5" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-5" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-5" class = "dw-div"></div>
+                    <div id="day-div-5" class="day-div"></div>
+                    </br>
+                    <span id="month-div-5" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-6" class=internal>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-6" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-6" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-6" class = "dw-div"></div>
+                    <div id="day-div-6" class="day-div"></div>
+                    </br>
+                    <span id="month-div-6" class="month-div"></span>
+                </div>
+                <div style="margin-left:2px" id="div-7" class=internal>
+                    <div class="in-out">
+                        <div>
+                            <i class="material-icons" style="color: red">notifications</i>
+                            <span id="in-div-7" class="in-div"></span>
+                        </div>
+                        <div>
+                            <i class="material-icons">notifications</i>
+                            <span id="out-div-7" class="out-div"></span>
+                        </div>
+                    </div>
+                    <div id="dw-div-7" class = "dw-div"></div>
+                    <div id="day-div-7" class="day-div"></div>
+                    </br>
+                    <span id="month-div-7" class="month-div"></span>
+                </div>
+            </div>
+
+            <div style="margin:5px;  ">
+                <button class="paddle" id="right-button">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </button>
+            </div>
+        </div>
+        <div  id="content-div-4"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        {{--<input id="date2" type="date">--}}
+        {{--<div id="demo4" style="background-color:blue; height:30px;"></div>--}}
+        {{--<div id="demo5" style="background-color:#dddddd; height:30px;"></div>--}}
+        {{--div content của từng ngày --}}
+        <div>
+            <div id="b20180130" class="th">30-01</div>
+            <div id="b20180131" class="th">31-01</div>
+            <div id="b20180201" class="th">01-02</div>
+            <div id="b20180202" class="th">0202</div>
+            <div id="b20180203" class="th">32</div>
+            <div id="b20180204" class="th">42</div>
+            <div id="b20180205" class="th">52</div>
+            <div id="b20180206" class="th">62</div>
+            <div id="b20180207" class="th">72</div>
+            <div id="b20180208" class="th">82</div>
+            <div id="b20180209" class="th">92</div>
+            <div id="b20180210" class="th">1002</div>
+            <div id="b20180211" class="th">1102</div>
+            <div id="b20180212" class="th">1202</div>
+        </div>
+    </section>
+    <style>
+         .k-notification {
+            top: -10px;
+            right:0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            height: 40px;
+            min-width:40px;
+            border-radius:50%;
+            background: #c32323;
+            border: none;
+            position: absolute;
+        }
+        .day-div{
+            font-size: 60px;
+            top:20px;
+            position: relative;
+            font-weight:300;
+        }
+        .month-div{
+            font-size: 20px;
+            position: relative;
+            bottom:-25px;
+        }
+        .in-out {
+            display: flex;
+            visibility: hidden;
+            flex-direction: row-reverse;
+        }
+        .in-div {
+
+        }
+        .out-div {
+
+        }
+        .dw-div {
+            font-size:20px;
+            top:-5px;
+            position: relative;
+        }
+
+        .scroll-horizontal-btn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left:20px;
+            margin-right:20px;
+            padding: 0;
+        }
+       #date-icon {
+            line-height: 30px;
+            vertical-align: middle;
+           cursor: pointer;
+        }
+        .internal{
+            min-width:150px;
+            height: 150px;
+            border: 0px solid black;
+            display: inline-block;
+            background-color: #777777;
+            cursor: pointer;
+
+            border-radius:15px;
+            margin-left:20px !important;
+            margin-right:20px;
+            color: white;
+            opacity: .2;
+        }
+        .internal.active {
+            background-color: #1544de;
+            opacity: 1;
+            /*box-shadow: 3px 5px 5px 5px #888888 ;*/
+            box-shadow: 0px 7px 20px 3px #c0c0c0;
+            border:none;
+        }
+        .center{
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            /*will change this to hidden later to deny scolling to user*/
+            white-space: nowrap;
+
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .paddle {
+            border-radius: 50%;
+            background:#f5593d;
+            border:none;
+            height:30px;
+            width:30px;
+            color: #FFFFFF;
+            align-items: center;
+            justify-content: center;
+            display:flex;
+        }
+        .th {
+            display: none;
+        }
+
+        @media screen and (max-width: 1650px) {
+            .center {
+            }
+        }
+        @media screen and (min-width: 480px) {#image-hidden{display:none}
+
+        }
+        @media screen and (max-width: 480px) {#button-hidden{display:none};
+
+        }
+        @media screen and (max-width: 630px) {strong{display:none};
+
+        }
+        @media screen and (max-width: 1500px) and (min-width: 1250px){strong{display:none};}
+        @media screen and (max-width: 1250px) {
+            .container0 {
+                flex-wrap: wrap;
+
+            }
+            .tem{
+
+            }
+        }
+        .container0{
+            margin:0 auto;
+            display: flex;
+
+
+        }
+        .tem{
+            width:1000px;
+            margin-left : 30px;
+            margin-top:30px;}
+
+
+        .container1 {
+
+
+            margin: 0 auto;
+
+        }
+        .item {
+            width:100%;
+            color:black;
+            margin: 5px;
+            color: white;
+            height: 50px;
+
+            line-height: 50px;
+        }
+
+        .container1 {
+
+            display: flex;
+        }
+
+        .item-1{
+            text-align:left;
+        }
+
+        .item-2{
+            text-align:center;
+        }
+
+        .item-3{
+            text-align:center;
+        }
+
+        .item-4{
+            text-align:right;
+        }
+
+        #today-info{display: none}
+
+    </style>
+
+    {{--<script>--}}
+        {{--$(document).ready(function(){--}}
+           {{--$('#demo5').hover(function(){--}}
+               {{--// $('.paddle').css("display","flex");--}}
+               {{--$('#demo5').addClass('th');--}}
+           {{--});--}}
+        {{--});--}}
+    {{--</script>--}}
+
+    <script data-require="jquery" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    {{--Cuộn ngang bằng button--}}{{--
+    <script>
+        $('#right-button').click(function() {
+            event.preventDefault();
+            $('#content').animate({
+                scrollLeft: "+=203px"
+            }, "10");
+        });
+
+        $('#left-button').click(function() {
+            event.preventDefault();
+            $('#content').animate({
+                scrollLeft: "-=200px"
+            }, "10");
+        });
+        $('#date-icon').click(function () {
+           $('#date').css("display","");
+           $(this).css("display","none");
+        });
+        $(window).width().change(function () {
+            if ($(window).width() < 1660) {
+                event.preventDefault();
+                $('#content').animate({
+                    scrollLeft: "-=200px"
+                }, "10");
+            };
+        });
+
+    </script>--}}
+    {{--data của ngày--}}
+    <script>
+        var a20180130 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180131 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180201 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180202 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180203 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180204 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180205 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180206 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180207 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180208 = {
+            in: '4',
+            out: '5',
+        };
+        var a20180209 = {
+            in: '4',
+            out: '5',
+        };
+
+    </script>
+
+    {{--convert ngay` sang tieng Viet--}}
+    <script>
+        function getDayOfWeek(date) {
+            var dayOfWeek = new Date(date).getDay();
+            return isNaN(dayOfWeek) ? null : ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'][dayOfWeek];
+        };
+        function monthOfYear(date) {
+            var monthOfYear = new Date(date).getMonth();
+            return isNaN(monthOfYear) ? null : ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'][monthOfYear];
+        }
+    </script>
+
+    <script>
+        $('#date-icon').click(function () {
+            $('#date').css("display","");
+            $(this).css("display","none");
+        });
+        $(document).ready(function(){
+            document.getElementById('date').valueAsDate = new Date();
+            var dateControl = document.querySelector('#date');
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+
+        /*$('#date2').change(
+            function() {
+                var dateControl = document.querySelector('#date2');
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"");
+                var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"");
+                document.getElementById('demo4').innerHTML = daySelected;
+
+                dateControl.stepDown(3);
+                var dateControl = document.querySelector('#date2');
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"");
+                document.getElementById('demo5').innerHTML = daySelected;
+                console.log(daySelected);
+                dateControl.stepUp(3);
+            }
+        );*/
+
+        $('#date').change(
+            function() {
+                var dateControl = document.querySelector('#date');
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"");
+                var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"");
+                document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value);
+                // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+               /* document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-4').innerHTML = eval(daySelected).out;*/
+
+
+
+                dateControl.stepDown(3);
+                var dateControl = document.querySelector('input[type="date"]');
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"");
+                document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value);
+             /*   document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-1').innerHTML = eval(daySelected).out;*/
+                dateControl.stepUp(3);
+
+                dateControl.stepDown(2);
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+                document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value);
+           /*     document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-2').innerHTML = eval(daySelected).out;*/
+                dateControl.stepUp(2);
+
+                dateControl.stepDown(1);
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+                document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value);
+   /*             document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-3').innerHTML = eval(daySelected).out;*/
+                dateControl.stepUp(1);
+
+
+                dateControl.stepUp(1);
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+                document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value);
+             /*   document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-5').innerHTML = eval(daySelected).out;*/
+                dateControl.stepDown(1);
+
+                dateControl.stepUp(2);
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+                document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value);
+            /*    document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-6').innerHTML = eval(daySelected).out;*/
+                dateControl.stepDown(2);
+
+                dateControl.stepUp(3);
+                var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+                document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+                document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value);
+                document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value);
+               /* document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+                document.getElementById('out-div-7').innerHTML = eval(daySelected).out;*/
+                dateControl.stepDown(3);
+            });
+        $('#div-1').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value);
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value);
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value);
+            dateControl.stepDown(3);
+        });
+        $('#div-2').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#div-3').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#div-5').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#div-6').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#div-7').click(function(){
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#left-button').click(function() {
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepDown(7);
+
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+        $('#right-button').click(function() {
+            var dateControl = document.querySelector('input[type="date"]');
+
+            dateControl.stepUp(7);
+
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            var daySelectedContent = 'b' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-4').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-4').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-4').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-4').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-4').innerHTML = getDayOfWeek (dateControl.value)
+            // document.getElementById('demo2').innerHTML = document.getElementById(daySelectedContent).innerHTML;
+
+
+            dateControl.stepDown(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+
+            document.getElementById('day-div-1').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-1').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-1').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-1').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-1').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(3);
+
+            dateControl.stepDown(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-2').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-2').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-2').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-2').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-2').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(2);
+
+            dateControl.stepDown(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-3').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-3').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-3').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-3').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-3').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepUp(1);
+
+
+            dateControl.stepUp(1);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-5').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-5').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-5').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-5').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-5').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(1);
+
+            dateControl.stepUp(2);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-6').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-6').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-6').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-6').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-6').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(2);
+
+            dateControl.stepUp(3);
+            var daySelected = 'a' + dateControl.value.replace(/-/g,"") ;
+            document.getElementById('day-div-7').innerHTML = dateControl.value.slice(8,10);
+            document.getElementById('month-div-7').innerHTML = monthOfYear (dateControl.value)
+            // document.getElementById('in-div-7').innerHTML = eval(daySelected).in;
+            // document.getElementById('out-div-7').innerHTML = eval(daySelected).out;
+            document.getElementById('dw-div-7').innerHTML = getDayOfWeek (dateControl.value)
+            dateControl.stepDown(3);
+        });
+    </script>
+
+@endsection
