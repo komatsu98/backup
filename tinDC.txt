@@ -1,0 +1,75 @@
+﻿[Góc thực hành THDC]
+Đây là các đề mới kì 20171 mới xuất hiện :D. Năm nay nhiều đề hay dữ, ngắn nhưng khá phức tạp.
+Nguồn đề bài: #Theza
+Code: #ATQD
+-----------------------------------------
+Đề bài:
+
+Bài 32: Viết chương trình thực hiện các công việc sau:
+a) Nhập vào số nguyên N (0 < N < 10).
+b) Nhập mảng kí tự gồm N kí tự. In mảng đã nhập.
+c) In ra mảng đã nhập với yêu cầu:
+_A[i] là chữ in hoa thì in ra kí tự 'H'
+_A[i] là chữ in thường thì in ra kí tự 'T'
+_A[i] không phải 2 loại trên thì in ra kí tự 'K'
+
+Bai 31: Viết chương trình thực hiện các công việc sau:
+Nhập vào số nguyên N (0 < N < 100000). Là giá tiền thu phí từ bàn phím.
+Biết rằng lái xe chỉ có 500, 200, 100 đồng. Hãy đưa ra các phương án mà người lái xe có thể lựa chọn để trả tiền cho trạm thu phí
+
+Bài 30:
+Viết chương trình thực hiện các công việc sau:
+Nhập vào số nguyên N (0 < N < 100000).
+Đưa ra kết quả số ngược của N.
+Ví dụ: 1234 có số ngược là 4321
+
+Bài 29:
+Viết chương trình thực hiện các công việc sau:
+Nhập vào số nguyên dương N.
+Kiểm tra số vừa nhập có phải số tiến không.
+Hiển thị thông báo ra màn hình.
+Biết: Số lùi là số mà các chữ số theo thứ tự tăng dần
+Ví dụ: abcd là số lùi khi a<b<c<d.
+
+Bài 28:
+Viết chương trình thực hiện các công việc sau:
+Nhập vào số nguyên dương N.
+Kiểm tra số vừa nhập có phải số lùi không.
+Hiển thị thông báo ra màn hình.
+Biết: Số lùi là số mà các chữ số theo thứ tự giảm dần
+Ví dụ: abcd là số lùi khi a>b>c>d.
+
+Bài 27:
+Viết chương trình thực hiện các công việc sau:
+Nhập số km đi được từ bàn phím trong khoảng (0;200).
+Tính số tiền đi taxi theo công thức:
++15000 đồng cho km đầu tiên
++13500 đồng cho km thứ 2 đến 5
++11000 đồng từ km thứ 6 trở đi
+Nếu đi được trên 120km thì sẽ giảm 10% tổng giá tiền.
+------------------------------------------------
+Code:
+Bài 32: https://goo.gl/5Nwz9W
+Bài 31: https://goo.gl/iNF8SB
+Bài 30: https://goo.gl/zfpEyN
+Bài 29: https://goo.gl/2A7yT9
+Bài 28: https://goo.gl/uHu1nW
+Bài 27: https://goo.gl/xtKySv
+------------------------------------------------
+Có lỗi cmt, không hiểu cmt nhé <3
+Chúc các bạn học tốt!
+#THDC
+------------------------------------------------
+1. Viết hàm f(x) = ... với x = ... và đưa ra x mà f(x) max
+
+2. Viết chương trình sắp xếp danh sách họ tên sinh viên theo bảng chữ cái abc không dấu, không phân biệt chữ hoa, chữ thường
+Giả sử các xâu họ tên đã được chuẩn hóa (bỏ các dấu cách đầu, cuối, giữa 2 chữ chỉ có 1 dấu cách)
+// xem "Code C\Mang_xau_cautruc\danh_sach_ten.cpp"
+
+3. Nhập tọa độ các điểm trên mặt phẳng tọa độ Decac, lưu vào file SOLIEU.DAT
+Biết số điểm này rất lớn và quá trình nhập kết thúc khi hoành độ > 1000
+	Đề 1: Duyệt file SOLIEU.DAT để đưa ra màn hình khoảng cách lớn nhất giữa 2 điểm trong các điểm đã nhập.
+	Đề 2: Duyệt file SOLIEU.DAT để đưa ra màn hình các bộ 3 điểm là đỉnh của 1 tam giác.
+// xem "Code C\Tep\bai2\bai2.cpp"
+
+================== 4. Viết hàm đệ quy để tính T(n) = 1^2 + 2^2 + ... + n^2
